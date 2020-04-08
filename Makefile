@@ -59,9 +59,9 @@ PKG_USE_MIPS16:=0
 GO_PKG:=v2ray.com/core
 GO_PKG_LDFLAGS:=-s -w
 GO_PKG_LDFLAGS_X:= \
-	v2ray.com/core.version=$(PKG_VERSION) \
-	v2ray.com/core.build=R$(PKG_RELEASE) \
-	v2ray.com/core.codename=KFERMercer edition
+	\"v2ray.com/core.version=$(PKG_VERSION)\" \
+	\"v2ray.com/core.build=R$(PKG_RELEASE)\" \
+	\"v2ray.com/core.codename=p.t.\"
 
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/golang/golang-package.mk
